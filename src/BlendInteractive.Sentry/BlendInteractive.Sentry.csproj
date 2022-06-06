@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<TargetFrameworks>net48;net5.0</TargetFrameworks>
+    <Nullable>enable</Nullable>
+	<LangVersion>8.0</LangVersion>
+	<DefineConstants Condition="'$(TargetFramework)' == 'net5.0'">NET50</DefineConstants>
+	<DefineConstants Condition="'$(TargetFramework)' == 'net48'">NET48</DefineConstants>
+
+	<PackageId>BlendInteractive.Sentry</PackageId>
+	<Description>Default Sentry configuration for Blend Interactive projects</Description>
+
+	<Version>1.0.3</Version>
+	<PackageVersion>1.0.3</PackageVersion>
+	<AssemblyVersion>1.0.3.0</AssemblyVersion>
+	<FileVersion>1.0.3.0</FileVersion>
+	<Authors>Blend Interactive</Authors>
+	<Company>Blend Interactive</Company>
+
+	<GenerateDocumentationFile>False</GenerateDocumentationFile>
+	<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+
+	<PackageProjectUrl>https://github.com/blendinteractive/blend-sentry</PackageProjectUrl>
+	<RepositoryUrl>https://github.com/blendinteractive/blend-sentry.git</RepositoryUrl>
+	<RepositoryType>git</RepositoryType>
+	<PackageTags></PackageTags>
+	<IsPackable>true</IsPackable>
+
+	<IncludeSymbols>true</IncludeSymbols>
+	<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
+    <Reference Include="System.Web" />
+	<Reference Include="System.Configuration" />
+	<PackageReference Include="Sentry.AspNet" Version="3.17.1" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net5.0'">
+    <PackageReference Include="Sentry.AspNetCore" Version="3.17.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
+  </ItemGroup>
+
+</Project>
