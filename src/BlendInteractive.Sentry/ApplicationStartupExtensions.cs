@@ -67,6 +67,7 @@ namespace BlendInteractive.Sentry
             return sentry;
         }
 
+#endif
         public static void LogException(this Exception? exception)
         {
             if (exception == null)
@@ -74,7 +75,6 @@ namespace BlendInteractive.Sentry
 
             SentrySdk.CaptureException(exception);
         }
-#endif
 
     }
 }
