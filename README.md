@@ -2,8 +2,6 @@
 
 Blend's default Sentry configuration. This repo / nuget package is a simple way to ensure all Blend-related Sentry installations are consistent and have a default minimum exception filtering applied.
 
-Note: This
-
 ## Installation
 
 For **.NET 4.8**:

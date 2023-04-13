@@ -10,10 +10,10 @@
 	<PackageId>BlendInteractive.Sentry</PackageId>
 	<Description>Default Sentry configuration for Blend Interactive projects</Description>
 
-	<Version>1.0.3</Version>
-	<PackageVersion>1.0.3</PackageVersion>
-	<AssemblyVersion>1.0.3.0</AssemblyVersion>
-	<FileVersion>1.0.3.0</FileVersion>
+	<Version>1.0.4</Version>
+	<PackageVersion>1.0.4</PackageVersion>
+	<AssemblyVersion>1.0.4.0</AssemblyVersion>
+	<FileVersion>1.0.4.0</FileVersion>
 	<Authors>Blend Interactive</Authors>
 	<Company>Blend Interactive</Company>
 
