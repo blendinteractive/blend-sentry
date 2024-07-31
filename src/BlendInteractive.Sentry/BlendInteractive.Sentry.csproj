@@ -8,10 +8,10 @@
 	<PackageId>BlendInteractive.Sentry</PackageId>
 	<Description>Default Sentry configuration for Blend Interactive projects</Description>
 
-	<Version>4.0.0</Version>
-	<PackageVersion>4.0.0</PackageVersion>
-	<AssemblyVersion>4.0.0.0</AssemblyVersion>
-	<FileVersion>4.0.0.0</FileVersion>
+	<Version>4.9.0</Version>
+	<PackageVersion>4.9.0</PackageVersion>
+	<AssemblyVersion>4.9.0.0</AssemblyVersion>
+	<FileVersion>4.9.0.0</FileVersion>
 	<Authors>Blend Interactive</Authors>
 	<Company>Blend Interactive</Company>
 
@@ -35,7 +35,7 @@
 
 
   <ItemGroup>
-    <PackageReference Include="Sentry.AspNetCore" Version="[4.1.1,5.0)" />
+    <PackageReference Include="Sentry.AspNetCore" Version="[4.9.0,5.0)" />
 	<PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
   </ItemGroup>
 
